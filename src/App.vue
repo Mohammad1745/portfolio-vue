@@ -1,16 +1,18 @@
 <template>
   <div>
     <Navbar />
-    <About />
+    <About id="about" />
+    <Projects id="project" />
   </div>
 </template>
 
 <script>
 import Navbar from './components/standalones/Navbar'
 import About from './components/standalones/About'
+import Projects from "@/components/standalones/Projects";
 
 export default {
-  components: {Navbar, About},
+  components: {Navbar, About, Projects},
 }
 </script>
 

@@ -2,7 +2,7 @@
   <div class="nav-bar">
     <b-navbar toggleable="lg" type="dark" variant="dark">
       <div class="container">
-        <b-navbar-brand href="#">
+        <b-navbar-brand href="#about">
           <span class="nav-title" >{{ name }}</span>
         </b-navbar-brand>
 
@@ -14,6 +14,7 @@
                 v-for="(link, i) in links"
                 :key="i"
                 :name="link.name"
+                :url="link.url"
             />
           </b-navbar-nav>
         </b-collapse>
@@ -36,7 +37,7 @@ export  default {
       links: [
         {
           name: 'Projects',
-          url: '#'
+          url: '#project'
         },
         {
           name: 'Skills',
