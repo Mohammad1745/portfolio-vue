@@ -32,7 +32,6 @@ export default {
   components: {Project},
   data() {
     return {
-      inlineItems: 2,
       projects: [
         {
           title: 'Pathfinder Algorithm Visualizer',
@@ -63,6 +62,11 @@ export default {
           image: require('@/assets/images/ecommerce.png'),
         },
       ]
+    }
+  },
+  computed: {
+    inlineItems: () => {
+      return window.innerWidth > 1085 ? 2 : 1
     }
   }
 }

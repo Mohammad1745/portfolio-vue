@@ -1,7 +1,7 @@
 <template>
   <div :class="classNames[0]">
     <a :class="classNames[1]" :href="url">
-      <font-awesome-icon :icon="icon" style="margin-right:.5rem" />
+      <font-awesome-icon v-if="icon" :icon="icon" style="margin-right:.5rem" />
       {{ title }}
     </a>
   </div>
