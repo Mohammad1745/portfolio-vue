@@ -1,21 +1,22 @@
 <template>
-  <div class="h-250 m-3">
+  <div class="project h-250 m-3">
     <div
         v-if="show"
         @mouseenter="hideImage"
-        class="details w-500 h-250"
+        class="details border-radius-2 w-500 h-250"
     >
       <img
           :src="image"
           width="500"
           height="250"
           alt="Loading..."
+          class="border-radius-2"
       >
     </div>
     <div
         v-else
         @mouseleave="showImage"
-        class="details w-500 h-250 p-5"
+        class="details border-radius-2 w-500 h-250 p-5"
     >
       <div class="text-center">
         <h4>{{ title }}</h4>
@@ -60,6 +61,8 @@ export default {
 </script>
 
 <style scoped>
+.project{
+}
 .details {
   background: #232323;
   color: #ddd;
