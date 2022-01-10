@@ -45,7 +45,7 @@ export  default {
         },
         {
           name: 'Contact',
-          url: '#'
+          url: '#contact'
         },
       ]
     }

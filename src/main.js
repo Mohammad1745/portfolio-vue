@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import { BootstrapVue } from 'bootstrap-vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret, faBriefcase, faTasks, faDownload, faCode, faFileCode } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faBriefcase, faTasks, faDownload, faCode, faFileCode, faMailBulk, faLocationArrow, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -11,7 +11,10 @@ library.add(faBriefcase)
 library.add(faDownload)
 library.add(faCode)
 library.add(faFileCode)
+library.add(faMailBulk)
+library.add(faPhoneAlt)
 library.add(faTasks)
+library.add(faLocationArrow)
 library.add(faFacebookSquare)
 library.add(faLinkedin)
 library.add(faGithubSquare)
