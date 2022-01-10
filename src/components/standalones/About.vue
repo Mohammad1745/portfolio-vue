@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-3">
+  <div class="container section">
     <div class="row">
       <div class="col-xl-4 col-lg-5 col-md-12">
         <Profile />

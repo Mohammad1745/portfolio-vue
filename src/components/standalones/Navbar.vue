@@ -37,11 +37,11 @@ export  default {
       links: [
         {
           name: 'Projects',
-          url: '#project'
+          url: '#projects'
         },
         {
           name: 'Skills',
-          url: '#'
+          url: '#skills'
         },
         {
           name: 'Contact',
@@ -61,6 +61,9 @@ export  default {
 
 <style scoped>
   .nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   .nav-title {
     font-size: 1.5rem;

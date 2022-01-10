@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <div class="container section">
     <div class="">
       <h1 class="text-center mb-4">
         <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'tasks' }" style="margin-right:.5rem" />
-        Projects I've Made
+        <u>Projects I've Made</u>
       </h1>
       <div
         v-for="j in parseInt(projects.length/inlineItems+1)"
@@ -70,6 +70,5 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 150px;
 }
 </style>
