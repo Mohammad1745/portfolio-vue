@@ -11,5 +11,6 @@ export default {
 <style scoped>
 .profile-image{
   border-radius: 50%;
+  border: 2px solid #232323;
 }
 </style>
