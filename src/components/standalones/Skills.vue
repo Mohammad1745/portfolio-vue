@@ -1,13 +1,9 @@
 <template>
   <div class="container section">
     <div class="">
-      <h1 class="text-center mb-4">
-        <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'file-code' }" style="margin-right:.5rem" />
-        <u>Skills & Technologies</u>
-      </h1>
-<!--      <p class="text-center mb-4">-->
-<!--        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit ipsa delectus eum quo voluptas aspernatur accusantium distinctio possimu est.-->
-<!--      </p>-->
+      <SectionHeader :title="section.title" :icon="section.icon" classNames="text-center mb-4" />
+      <SectionSubtitle :content="section.subtitle" />
+
       <div class="row">
         <div
             v-for="(skill, i) in skills.data"
@@ -29,12 +25,19 @@
 
 <script>
 import Skill from "@/components/reusables/Skill";
+import SectionHeader from "@/components/reusables/SectionHeader";
+import SectionSubtitle from "@/components/reusables/SectionSubtitle";
 
 export default {
   name: "Projects",
-  components: {Skill},
+  components: {Skill, SectionHeader, SectionSubtitle},
   data() {
     return {
+      section: {
+        title: "Skills & Technologies",
+        icon: { prefix: 'fas', iconName: 'file-code' },
+        subtitle: ""
+      },
       inlineItems: 3,
       skills: {
         icon:{ prefix: 'fas', iconName: 'code' },

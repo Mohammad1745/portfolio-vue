@@ -1,13 +1,8 @@
 <template>
   <div :class="classNames" >
     <div class="px-md-5 px-sm-0 my-md-0 my-sm-5">
-      <h1 class="mb-4">
-        <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'mail-bulk' }" style="margin-right:.5rem" />
-        <u>Contact</u>
-      </h1>
-      <p class="">
-        If you have any porject or need help. Contact me
-      </p>
+      <SectionHeader :title="section.title" :icon="section.icon" classNames="mb-4" />
+      <SectionSubtitle :content="section.subtitle" />
       <div class="form">
         <div class="form-group">
           <label>Name</label>
@@ -28,9 +23,22 @@
 </template>
 
 <script>
+import SectionHeader from "@/components/reusables/SectionHeader";
+import SectionSubtitle from "@/components/reusables/SectionSubtitle";
+
 export default {
   name: "Contact",
+  components: {SectionHeader, SectionSubtitle},
   props: ['classNames'],
+  data () {
+    return {
+      section: {
+        title: "Contact",
+        icon: { prefix: 'fas', iconName: 'mail-bulk' },
+        subtitle: "If you have any porject or need help. Contact me"
+      }
+    }
+  }
 }
 </script>
 
