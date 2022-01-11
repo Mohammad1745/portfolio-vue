@@ -23,8 +23,8 @@
 
 <script>
 import ButtonLink from "@/components/reusables/ButtonLink";
-import Profile from "@/components/standalones/Profile";
-import Introduction from "@/components/standalones/Introduction";
+import Profile from "@/components/standalones/about/Profile";
+import Introduction from "@/components/standalones/about/Introduction";
 
 export default {
   name: "About",

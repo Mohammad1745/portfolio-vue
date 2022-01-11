@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ProfileImage from "@/components/standalones/ProfileImage";
+import ProfileImage from "@/components/standalones/about/ProfileImage";
 import ButtonLink from "@/components/reusables/ButtonLink";
 
 export default {

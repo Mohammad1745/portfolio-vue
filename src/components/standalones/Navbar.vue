@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import {user} from '../../data/db.json'
 import NavItem from "@/components/reusables/NavItem";
 
 export  default {
@@ -37,6 +36,7 @@ export  default {
   },
   data() {
     return {
+      name: 'Mohammad Ali',
       links: [
         {
           name: 'Projects',
@@ -53,12 +53,6 @@ export  default {
       ]
     }
   },
-  computed: {
-    name: () => user.first_name + " " + user.last_name
-  },
-  methods: {
-
-  }
 }
 </script>
 
