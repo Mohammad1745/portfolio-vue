@@ -34,8 +34,8 @@ export default {
       buttons :{
         classNames: ['col-md-4 col-sm-12', 'mt-2 btn btn-outline-primary d-block'],
         info: [
-          { icon: { prefix: 'fas', iconName: 'briefcase' }, title: 'Work With Me', url: ''},
-          { icon: { prefix: 'fas', iconName: 'tasks' }, title: 'See My Works', url: ''},
+          { icon: { prefix: 'fas', iconName: 'briefcase' }, title: 'Work With Me', url: '#contact'},
+          { icon: { prefix: 'fas', iconName: 'tasks' }, title: 'See My Works', url: '#projects'},
           { icon: { prefix: 'fas', iconName: 'download' }, title: 'Download Resume', url: ''},
         ]
       }

@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div>
     <Navbar />
     <About id="about" />
     <Projects id="projects" />
@@ -21,7 +21,4 @@ export default {
 </script>
 
 <style scoped>
-.app {
-  margin-top: 80px;
-}
 </style>
