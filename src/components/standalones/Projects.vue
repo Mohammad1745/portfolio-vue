@@ -35,28 +35,28 @@ export default {
       projects: [
         {
           title: 'Pathfinder Algorithm Visualizer',
-          subtitle: 'Subtitle',
+          subtitle: 'A Visual Demonstration: how the pathfinder algorithms work.',
           url: 'https://mohammad1745.github.io/pathfinder_algorithm_visualizer',
           stack: 'Vanilla.js',
           image: require('@/assets/images/pathfinder.png'),
         },
         {
           title: 'Sorting Algorithm Visualizer',
-          subtitle: 'Subtitle',
+          subtitle: 'A Visual Demonstration: how the soritng algorithms work.',
           url: 'https://mohammad1745.github.io/sorting_algorithm_visualizer',
           stack: 'Vanilla.js',
           image: require('@/assets/images/sorting.png'),
         },
         {
           title: 'Character Reader Engine',
-          subtitle: 'Subtitle',
+          subtitle: 'Fully custom built that can read number written on the sketch area.',
           url: 'https://mohammad1745.github.io/character-reader-engine',
           stack: 'Vanilla.js',
           image: require('@/assets/images/character_reader.png'),
         },
         {
-          title: 'Ecommerce Site',
-          subtitle: 'Subtitle',
+          title: 'Multi-vendor Ecommerce',
+          subtitle: 'Multi-vendor Ecommerce Site with user referral system',
           url: 'https://github.com/Mohammad1745/asthar-bazar',
           stack: 'Laravel',
           image: require('@/assets/images/ecommerce.png'),

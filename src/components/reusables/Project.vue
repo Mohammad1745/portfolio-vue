@@ -24,7 +24,7 @@
       <div class="mt-1 text-center">
         <p>{{ subtitle }}</p>
       </div>
-      <div class="mt-5 text-center">
+      <div class="mt-4 text-center">
         <ButtonLink
             :classNames="['','btn btn-outline-primary']"
             title="Project Link"
