@@ -3,7 +3,7 @@ import App from './App.vue'
 import { BootstrapVue } from 'bootstrap-vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret, faBriefcase, faTasks, faDownload, faCode, faFileCode, faMailBulk, faLocationArrow, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faLinkedin, faGithub, faGithubSquare, faGitlab, faTwitterSquare, faCodepen } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faUserSecret)
@@ -17,7 +17,11 @@ library.add(faTasks)
 library.add(faLocationArrow)
 library.add(faFacebookSquare)
 library.add(faLinkedin)
+library.add(faGitlab)
+library.add(faGithub)
 library.add(faGithubSquare)
+library.add(faCodepen)
+library.add(faTwitterSquare)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

@@ -5,6 +5,8 @@
     <Projects id="projects" />
     <Skills id="skills" />
     <Contact id="contact" />
+    <hr>
+    <Footer />
   </div>
 </template>
 
@@ -14,9 +16,10 @@ import About from './components/standalones/About'
 import Projects from "@/components/standalones/Projects";
 import Skills from "@/components/standalones/Skills";
 import Contact from "@/components/standalones/Contact";
+import Footer from "@/components/standalones/Footer";
 
 export default {
-  components: {Navbar, About, Projects, Skills, Contact},
+  components: {Navbar, About, Projects, Skills, Contact, Footer},
 }
 </script>
 
