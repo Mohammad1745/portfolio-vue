@@ -7,6 +7,7 @@
       <div class="col-xl-8 col-lg-7 col-md-12">
         <Introduction />
         <div class="row button-group mt-4">
+          <link rel="icon" href="<%= BASE_URL %>Resume_Mohammad.pdf">
           <ButtonLink
             v-for="(button, i) in buttons.info"
             :key="i"
@@ -36,7 +37,7 @@ export default {
         info: [
           { icon: { prefix: 'fas', iconName: 'briefcase' }, title: 'Work With Me', url: '#contact'},
           { icon: { prefix: 'fas', iconName: 'tasks' }, title: 'See My Works', url: '#projects'},
-          { icon: { prefix: 'fas', iconName: 'download' }, title: 'Download Resume', url: ''},
+          { icon: { prefix: 'fas', iconName: 'download' }, title: 'Download Resume', url: 'Resume_Mohammad.pdf'},
         ]
       }
     }
