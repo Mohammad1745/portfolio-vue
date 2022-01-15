@@ -8,7 +8,7 @@
         <div
             v-for="(skill, i) in skills.data"
             :key="i"
-            class="col-md-4 col-sm-12 d-inline-block justify-content-between"
+            class="col-md-4 col-sm-12 my-md-0 my-sm-2 d-inline-block justify-content-between"
         >
           <h3 class="text-center">{{ skill.type }}</h3>
           <Skill
@@ -42,8 +42,8 @@ export default {
       skills: {
         icon:{ prefix: 'fas', iconName: 'code' },
         data:[
-          { type: 'Frameworks', titles: ['Laravel', 'Vue.js', 'Node.js(Express)', 'Flutter',] },
-          { type: 'Languages', titles: ['PHP', 'JavaScript', 'C/C++', 'HTML/CSS', 'Dart',] },
+          { type: 'Frameworks / Libraries', titles: ['Laravel', 'Nuxt/Vue.js', 'Express(Node.js)', 'Adonis(Node.js)', 'Flutter',] },
+          { type: 'Languages', titles: ['PHP', 'JS/TS', 'C/C++', 'HTML/CSS', 'Dart',] },
           { type: 'Industrial', titles: ['Microcontroller', 'IoT', 'PCB Design',] },
         ]
       }
