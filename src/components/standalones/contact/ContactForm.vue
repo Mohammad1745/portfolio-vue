@@ -1,5 +1,6 @@
 <template>
   <form class="form" @submit.prevent="saveMessage">
+    <div v-if="alertMessage" class="alert alert-success">{{ alertMessage }}</div>
     <div class="form-group">
       <label>Name</label>
       <input type="text" class="form-control" v-model="name">
@@ -17,6 +18,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: "ContactForm",
   data () {
@@ -24,20 +26,37 @@ export default {
       name: '',
       email: '',
       message: '',
+      alertMessage: ''
     }
   },
   methods: {
-    saveMessage () {
-      console.log({
-        name: this.name,
-        email: this.email,
-        message: this.message,
-      })
+    async saveMessage () {
+      if (this.name && this.email && this.message) {
+        let response = await axios.post('https://mohammad-portfolio-backend.herokuapp.com/mdali2016/save-message', {
+          name: this.name, email: this.email, message: this.message
+        })
+        if(response.data.success === true){
+          this.name =  ''
+          this.email =  ''
+          this.message =  ''
+          this.alertMessage =  response.data.message
+          setTimeout(() => {
+            this.alertMessage = ''
+          }, 1500)
+        }
+      }
     }
   }
 }
 </script>
 
 <style scoped>
-
+.alert{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+}
 </style>
