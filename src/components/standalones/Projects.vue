@@ -5,18 +5,18 @@
       <SectionSubtitle :content="section.subtitle" />
 
       <div
-        v-for="j in parseInt(projects.length/inlineItems+1)"
-        :key="j"
-        class="d-flex justify-content-center"
+          v-for="j in parseInt(projects.length/inlineItems+1)"
+          :key="j"
+          class="project-list"
       >
         <Project
-          v-for="(project, i) in projects.slice(j*inlineItems-inlineItems, j*inlineItems)"
-          :key="i"
-          :image="project.image"
-          :title="project.title"
-          :subtitle="project.subtitle"
-          :url="project.url"
-          :stack="project.stack"
+            v-for="(project, i) in projects.slice(j*inlineItems-inlineItems, j*inlineItems)"
+            :key="i"
+            :image="project.image"
+            :title="project.title"
+            :subtitle="project.subtitle"
+            :url="project.url"
+            :stack="project.stack"
         />
       </div>
     </div>
@@ -72,13 +72,33 @@ export default {
   },
   computed: {
     inlineItems: () => {
-      return window.innerWidth > 1085 ? 2 : 1
+      return window.innerWidth > 1085 ? 20 : 10
     }
+  },
+  methods: {
+
   }
 }
 </script>
 
 <style scoped>
 .container {
+}
+.project-list {
+  display: flex;
+  overflow-x: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>
