@@ -40,6 +40,13 @@ export default {
       },
       projects: [
         {
+          title: 'Covid-19 information',
+          subtitle: 'Covid-19 Information, Countrywise DataTable, Charts & spreding of COVID overtime map.',
+          url: 'https://covid19information.netlify.app/',
+          stack: 'Nuxt.js',
+          image: require('@/assets/images/overtime.png'),
+        },
+        {
           title: 'Pathfinder Algorithm Visualizer',
           subtitle: 'A Visual Demonstration: how the pathfinder algorithms work.',
           url: 'https://mohammad1745.github.io/pathfinder_algorithm_visualizer',
