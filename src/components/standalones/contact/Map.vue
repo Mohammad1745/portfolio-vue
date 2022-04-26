@@ -1,55 +1,56 @@
 <template>
-  <div class="img p-3" :class="classNames" >
-    <div class="info">
-      <div class="row">
-        <div class="col-6">
-          <div>
-            <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'location-arrow' }" style="margin-right:.5rem; color: red" />
-            Location: House 2, Road 2, Nirala Residential Area, Khulna
-          </div>
-        </div>
-        <div class="col-6">
-          <div>
-            <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'phone-alt' }" style="margin-right:.5rem; color: green" />
-            +880 1631 292 463
-          </div>
-          <div>
-            <font-awesome-icon :icon="{ prefix: 'fas', iconName: 'mail-bulk' }" style="margin-right:.5rem; color: green" />
-            mdali2016.227@gmail.com
-          </div>
-        </div>
-      </div>
+  <div  :class="classNames" >
+    <Info/>
+    <div class="map p-3">
+      <l-map style="height: 50vh; max-width: 90vh" :zoom="zoom" :center="center">
+        <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+        <l-marker :lat-lng="markerLatLng" ></l-marker>
+      </l-map>
     </div>
   </div>
 </template>
 
 <script>
+import { LMap, LTileLayer, LMarker} from 'vue2-leaflet';
+import Info from "./Info";
+
 export default {
   name: "Map",
   props: ['classNames'],
+  components: {
+    Info,
+    LMap,
+    LTileLayer,
+    LMarker
+  },
+  data () {
+    return {
+      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      attribution:
+          '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+      zoom: 7,
+      center: [22.8021459,89.5555336],
+      weight: 0,
+      opacity: 0.1,
+      fillOpacity: 0.5,
+      markerLatLng: [22.8021459,89.5555336]
+    }
+  },
 }
 </script>
 
 <style scoped>
 
-.img {
+.map {
   border: 1px solid #232323;
   border-radius: 5px;
-  background-image: url('../../../assets/images/location.png');
   background-size: 100% 100%;
 }
-.info {
-  width: 70%;
-  background:  #232323;
-  color: white;
-  position: relative;
-  flex: 1 1 auto;
-  padding: 1rem;
-  border-radius: 5px;
-  margin: auto;
+.vue2leaflet-map{
+  z-index: 8;
 }
 @media (max-width:767px) {
-  .img {
+  .map {
     height: 400px;
   }
 }
