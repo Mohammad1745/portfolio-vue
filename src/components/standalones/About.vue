@@ -37,7 +37,7 @@ export default {
         info: [
           { icon: { prefix: 'fas', iconName: 'briefcase' }, title: 'Work With Me', url: '#contact'},
           { icon: { prefix: 'fas', iconName: 'tasks' }, title: 'See My Works', url: '#projects'},
-          { icon: { prefix: 'fas', iconName: 'download' }, title: 'Download Resume', url: 'Resume_Mohammad.pdf'},
+          { icon: { prefix: 'fas', iconName: 'download' }, title: 'Download Resume', url: 'Mohammad_KU_Physics_2017.pdf'},
         ]
       }
     }
