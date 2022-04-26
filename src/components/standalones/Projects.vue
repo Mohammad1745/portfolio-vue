@@ -47,6 +47,13 @@ export default {
           image: require('@/assets/images/overtime.png'),
         },
         {
+          title: 'Healthcare Management System',
+          subtitle: 'An online healthcare management system for the healthcare professional and the patients.',
+          url: 'https://www.doctorsinlife.com/',
+          stack: 'Laravel',
+          image: require('@/assets/images/DiL.png'),
+        },
+        {
           title: 'Pathfinder Algorithm Visualizer',
           subtitle: 'A Visual Demonstration: how the pathfinder algorithms work.',
           url: 'https://mohammad1745.github.io/pathfinder_algorithm_visualizer',
