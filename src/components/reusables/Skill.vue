@@ -17,7 +17,7 @@ export default {
 .skill{
   /*width: 18rem ;*/
   height: 40px ;
-  background: #323232 ;
+  background: #464646;
   color: white ;
   padding-top: .5rem ;
   margin-top: .5rem ;
